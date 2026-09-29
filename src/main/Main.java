@@ -21,5 +21,6 @@ public class Main {
 
         System.out.println("Pedido " + pedido.getId() + " -> " + pedido.getEstado());
         System.out.println(wms.buscar("SKU-001"));
+        System.out.println("Stock disponible SKU-001: " + wms.obtenerStock("SKU-001"));
     }
 }

@@ -1,4 +1,4 @@
-package ar.edu.wmstms.modelo;
+package main.modelo;
 
 public class Producto {
     private final String sku;

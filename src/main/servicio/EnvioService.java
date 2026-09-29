@@ -1,6 +1,6 @@
-package ar.edu.wmstms.servicio;
+package main.servicio;
 
-import ar.edu.wmstms.modelo.Pedido;
+import main.modelo.*;
 
 /** TMS: gestión del transporte y despacho de pedidos. */
 public class EnvioService {

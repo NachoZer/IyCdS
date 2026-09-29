@@ -10,7 +10,10 @@ public class Producto {
     private static final Map<String, String> SKU_A_NOMBRE = new HashMap<>(
             Map.of(
                     "SKU-001", "Auriculares Bluetooth",
-                    "SKU-002", "Parlante Bluetooth"
+                    "SKU-002", "Parlante Bluetooth",
+                    "SKU-003", "Lavaropas",
+                    "SKU-004", "Heladera",
+                    "SKU-005", "Tostadora"
             )
     );
 

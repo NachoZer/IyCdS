@@ -8,7 +8,7 @@ public class Main {
         InventarioService wms = new InventarioService();
         EnvioService tms = new EnvioService();
 
-        wms.registrarProducto(new Producto("SKU-001", "Auriculares Bluetooth", 50));
+        wms.registrarProducto(new Producto("SKU-001", 50));
 
         Pedido pedido = new Pedido("PED-1001", "Av. Siempre Viva 742");
         pedido.agregarItem("SKU-001", 2);

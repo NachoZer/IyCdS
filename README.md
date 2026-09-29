@@ -32,6 +32,9 @@ src/main/java/ar/edu/wmstms/
 - `release/*`: preparación de versión, sale de `develop` y se mergea a `main` y `develop`.
 - `hotfix/*`: correcciones urgentes, salen de `main` y se mergean a `main` y `develop`.
 
+## Ignorar configuraciones locales (punto 7.b)
+Implementacion de .gitignore 
+
 ## ¿Qué documentaríamos en el README? (punto 8.1)
 <!-- COMPLETAR: qué es el proyecto, requisitos, instalación, ejecución, estructura, flujo de ramas,
      convenciones de commits, cómo contribuir, integrantes, licencia. Justificar por qué. -->
@@ -40,3 +43,4 @@ src/main/java/ar/edu/wmstms/
 <!-- COMPLETAR: datos a pedir (descripción, motivo, issue relacionado, cómo se probó, impacto/breaking changes,
      capturas) y qué ofrece GitHub: PULL_REQUEST_TEMPLATE, CODEOWNERS, checks de CI, code review con comentarios
      y sugerencias, branch protection, Issues vinculados, Projects/labels. -->
+

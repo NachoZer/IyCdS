@@ -1,7 +1,6 @@
-package ar.edu.wmstms.servicio;
+package main.servicio;
 
-import ar.edu.wmstms.modelo.Pedido;
-import ar.edu.wmstms.modelo.Producto;
+import main.modelo.*;
 
 import java.util.HashMap;
 import java.util.Map;

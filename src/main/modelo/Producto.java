@@ -1,13 +1,22 @@
 package main.modelo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Producto {
     private final String sku;
     private final String nombre;
     private int stock;
+    private static final Map<String, String> SKU_A_NOMBRE = new HashMap<>(
+            Map.of(
+                    "SKU-001", "Auriculares Bluetooth",
+                    "SKU-002", "Parlante Bluetooth"
+            )
+    );
 
-    public Producto(String sku, String nombre, int stock) {
+    public Producto(String sku, int stock) {
         this.sku = sku;
-        this.nombre = nombre;
+        this.nombre = SKU_A_NOMBRE.get(sku);
         this.stock = stock;
     }
 

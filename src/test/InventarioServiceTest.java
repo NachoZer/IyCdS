@@ -30,4 +30,20 @@ class InventarioServiceTest {
 
         assertThrows(IllegalStateException.class, () -> wms.prepararPedido(pedido));
     }
+
+    @Test
+    void obtenerStockRetornaCantidadCorrecta() {
+        InventarioService wms = new InventarioService();
+        wms.registrarProducto(new Producto("SKU-001", "Teclado", 15));
+
+        assertEquals(15, wms.obtenerStock("SKU-001"));
+        assertEquals(15, wms.consultarStock("SKU-001"));
+    }
+
+    @Test
+    void obtenerStockProductoInexistenteRetornaCero() {
+        InventarioService wms = new InventarioService();
+
+        assertEquals(0, wms.obtenerStock("SKU-NO-EXISTE"));
+    }
 }

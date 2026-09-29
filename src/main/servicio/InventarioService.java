@@ -23,6 +23,17 @@ public class InventarioService {
         return p != null && p.getStock() >= cantidad;
     }
 
+    // Devuelve el stock disponible del producto o 0 si no existe.
+    public int obtenerStock(String sku) {
+        Producto p = productos.get(sku);
+        return p != null ? p.getStock() : 0;
+    }
+
+    // Consulta la cantidad de stock disponible según su SKU.
+    public int consultarStock(String sku) {
+        return obtenerStock(sku);
+    }
+
     /** Descuenta stock y marca el pedido como PREPARADO. */
     public void prepararPedido(Pedido pedido) {
         for (Map.Entry<String, Integer> item : pedido.getItems().entrySet()) {

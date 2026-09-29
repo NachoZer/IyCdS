@@ -1,4 +1,4 @@
-package ar.edu.wmstms.modelo;
+package main.modelo;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,9 +1,7 @@
-package ar.edu.wmstms;
+package main;
 
-import ar.edu.wmstms.modelo.Pedido;
-import ar.edu.wmstms.modelo.Producto;
-import ar.edu.wmstms.servicio.EnvioService;
-import ar.edu.wmstms.servicio.InventarioService;
+import main.modelo.*;
+import main.servicio.*;
 
 public class Main {
     public static void main(String[] args) {
